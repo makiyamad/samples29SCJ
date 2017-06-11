@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+    .navbar-nav-vertical{
+        -webkit-box-orient: vertical;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+nav{
+    background-color: black;
+}
+
