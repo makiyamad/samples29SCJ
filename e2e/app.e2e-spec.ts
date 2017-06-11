@@ -1,10 +1,10 @@
-import { IsolationPage } from './app.po';
+import { samples29SCJPage } from './app.po';
 
-describe('isolation App', () => {
-  let page: IsolationPage;
+describe('samples29SCJ App', () => {
+  let page: samples29SCJPage;
 
   beforeEach(() => {
-    page = new IsolationPage();
+    page = new samples29SCJPage();
   });
 
   it('should display welcome message', done => {
