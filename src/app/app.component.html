@@ -1,23 +1,57 @@
-<h4>CSS samples29SCJ</h4>
+<div class="items">
+  <div class="item">
+    <h4>CSS samples29SCJ</h4>
+    <div>
+      <app-c1 id="1"></app-c1>
+      <app-c2 id="1"></app-c2>
+    </div>
+  </div>
+  <div class="item">
+    <h4>templates samples29SCJ</h4>
+    <div>
+      <app-c1 id="2"></app-c1>
+      <app-c1 id="3"></app-c1>
+      <app-c2 id="4"></app-c2>
+      <app-c2 id="8"></app-c2>
+      <app-c2 id="30"></app-c2>
+    </div>
+  </div>
+  <div class="item">
+    <h4>template syntax Angular 4 </h4>
 
-<div>
-  <app-c1 id="1"></app-c1>
-  <app-c2 id="1"></app-c2>
+    <div [class.piscar]="id > 4">elemento</div>
+
+    <button (click)="clicou($event)">clique aqui</button>
+
+    <div title="Planeta {{mundo}}">Ola {{mundo}}</div>
+
+    <div>
+      <input type="text" [value]="name" (input)="name = $event.target.value" /> {{name}}
+    </div>
+
+    <div>
+      <app-counter [(count)]="idade">
+      </app-counter> idade: {{idade}}
+    </div>
+  </div>
+  <div class="item">
+    <video #movieplayer style="width:100px;">
+      <source src="http://html5demos.com/assets/dizzy.mp4" type="video/mp4">
+      <source src="http://html5demos.com/assets/dizzy.webm" type="video/webm">
+      <source src="http://html5demos.com/assets/dizzy.ogv" type="video/ogg">
+    </video>
+    <button (click)="movieplayer.play()">tocar</button>
+    <button (click)="movieplayer.pause()">pause</button>
+  </div>
+  <div class="item">
+    <h4>diretivas</h4>
+
+    <p meuDestaque>me destaque!</p>
+    <p *toggle="deveMostrar">deveMostrar = {{deveMostrar}}</p>
+    <p *toggle="!deveMostrar">!deveMostrar = {{!deveMostrar}}</p>
+  </div>
+  <div class="item item-grande">
+    <h4>vertical menu example with bootstrap 4 </h4>
+    <app-vmenu></app-vmenu>
+  </div>
 </div>
-
-<br /><br />
-<h4>templates samples29SCJ</h4>
-<div>
-  <app-c1 id="a"></app-c1>
-  <app-c1 id="b"></app-c1>  
-  <app-c2 id="c"></app-c2>
-  <app-c2 id="d"></app-c2>  
-</div>
-
-<br /><br />
-
-<h4>vertical menu example with bootstrap 4 </h4>
-
-<app-vmenu></app-vmenu>
-
-<br /><br />

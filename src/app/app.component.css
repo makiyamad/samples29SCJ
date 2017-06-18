@@ -1,0 +1,21 @@
+.piscar{
+    animation: piscador 1s linear infinite;
+}
+
+@keyframes piscador {  
+  50% { opacity: 0.2; }
+}
+
+.items {
+	overflow: hidden; /* simple clearfix */
+}
+.items .item {
+	float: left;
+	width: 50%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 30px;
+}
+.items .item-grande{
+	width: 100%;    
+}

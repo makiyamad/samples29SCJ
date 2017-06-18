@@ -1,6 +1,9 @@
 div {
-    background-color: blue;
-    border: 5px solid yellow;
+    background-color: #91b191;
     padding:1px;
     font-size: 20px;
+}
+
+input {
+    width:200px;
 }

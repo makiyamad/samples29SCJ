@@ -7,11 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class C2Component implements OnInit {
 
-  @Input() id: string;
+  @Input() id: number;
+  rangeStep: number = 1;
+  rangeVal: number = 2;  
+  rangeMin: number = 1;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() { 
   }
 
+  ngOnInit() {
+        this.rangeStep += this.id/2;
+      this.rangeVal *= this.id;
+      this.rangeMin = this.id;       
+  }
 }
