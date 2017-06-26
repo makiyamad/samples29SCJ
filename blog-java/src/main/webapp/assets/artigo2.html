@@ -1,0 +1,146 @@
+<div contentEditable="true"> Veja os campos abaixo:
+</div>
+
+<br/>
+<div contenteditable="true" style="padding:20px;border:1px solid #f0f0f0">
+    você pode editar este texto!
+</div>
+<br/>
+<form>
+    <fieldset>
+        <legend>Detalhes pessoais</legend>
+        <div class="form-group">
+            <label>Nome</label>
+            <input id="given-name" class="form-control" name="given-name" type="text" placeholder="nome"> //placeholder
+        </div>
+        <div class="form-group">
+            <label>Data de Nascimento</label>
+            <input id="dob" class="form-control" name="dob" type="date" required> //data, requerida
+            <div class="form-group">
+                <label>Email </label>
+                <input id="email" class="form-control" name="email" type="email" placeholder="exemplo@dominio.com" required>                //email, placeholder, requerido
+            </div>
+            <div class="form-group">
+                <label>URL </label>
+                <input id="url" class="form-control" name="url" type="url" placeholder="http://meusite.com"> URL, placeholder
+            </div>
+            <div class="form-group">
+                <label>Telefone </label>
+                <input id="phone" class="form-control" name="phone" type="tel" placeholder="Eg. +55 11 97320 5486"> phone,
+                placeholder, requerido
+            </div>
+            <div class="form-group">
+                <label>Tamanho de Sapato</label>
+                <input id="shoes" class="form-control" name="shoes" type="number" min="10" max="48" step="1" value="10">                número, min-max
+            </div>
+            <div class="form-group">
+                <label>Pontuação no teste (1 baixo - 100 alto)</label>
+                <input id="skill" class="form-control" name="skill" type="range" min="1" max="100" value="0"> range, min-max
+                <output name="output" onforminput="value=a.value">0</output>
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço de Cobrança</legend>
+        <div>
+            <label>Address 
+            <textarea id="address" class="form-control" name="address" rows=5 required></textarea>  textarea com row=5, requerido 
+    	    </label>
+        </div>
+        <div>
+            <label>País 
+            <input id="country" class="form-control" name="country" list="country-names" type="text" required> lista da dados, requerido
+            <datalist id="country-names"> 
+              <option label="Brasil" value="Brasil"></option> 
+              <option label="EUA" value="EUA"></option>
+            	<option label="Índia" value="Índia"></option> 
+            	<option label="Bulgaria" value="Bulgaria"></option> 
+            	<option label="Japão" value="Japão"></option> 
+            	<option label="Austrália" value="Austrália"></option> 
+          </datalist>
+		</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </fieldset>
+</form>
+
+<div>Veja o código html destes campos:</div>
+
+<pre><code>&lt;div contenteditable="true"&gt;
+    você pode editar este texto!
+&lt;/div&gt;
+
+&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Detalhes pessoais&lt;/legend&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label&gt;Nome&lt;/label&gt;
+            &lt;input id="given-name" class="form-control" name="given-name" type="text" placeholder="nome"&gt; //placeholder
+
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label&gt;Data de Nascimento&lt;/label&gt;
+            &lt;input id="dob" class="form-control" name="dob" type="date" required&gt; //data, requerida
+
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Email &lt;/label&gt;
+                &lt;input id="email" class="form-control" name="email" type="email" placeholder="exemplo@dominio.com" required&gt;                //email, placeholder, requerido
+
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;URL &lt;/label&gt;
+                &lt;input id="url" class="form-control" name="url" type="url" placeholder="http://meusite.com"&gt; URL, placeholder
+
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Telefone &lt;/label&gt;
+                &lt;input id="phone" class="form-control" name="phone" type="tel" placeholder="Eg. +55 11 97320 5486"&gt; phone,
+                placeholder, requerido
+
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Tamanho de Sapato&lt;/label&gt;
+                &lt;input id="shoes" class="form-control" name="shoes" type="number" min="10" max="48" step="1" value="10"&gt;                número, min-max
+
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Pontuação no teste (1 baixo - 100 alto)&lt;/label&gt;
+                &lt;input id="skill" class="form-control" name="skill" type="range" min="1" max="100" value="0"&gt; range, min-max
+                &lt;output name="output" onforminput="value=a.value"&gt;0&lt;/output&gt;
+
+            &lt;/div&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+        &lt;legend&gt;Endereço de Cobrança&lt;/legend&gt;
+        &lt;div&gt;
+            &lt;label&gt;Address 
+            &lt;textarea id="address" class="form-control" name="address" rows=5 required&gt;&lt;/textarea&gt;  textarea com row=5, requerido 
+    	    &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;label&gt;País 
+            &lt;input id="country" class="form-control" name="country" list="country-names" type="text" required&gt; lista da dados, requerido
+            &lt;datalist id="country-names"&gt; 
+              &lt;option label="Brasil" value="Brasil"&gt;&lt;/option&gt; 
+              &lt;option label="EUA" value="EUA"&gt;&lt;/option&gt;
+            	&lt;option label="Índia" value="Índia"&gt;&lt;/option&gt; 
+            	&lt;option label="Bulgaria" value="Bulgaria"&gt;&lt;/option&gt; 
+            	&lt;option label="Japão" value="Japão"&gt;&lt;/option&gt; 
+            	&lt;option label="Austrália" value="Austrália"&gt;&lt;/option&gt; 
+          &lt;/datalist&gt;
+		&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+        &lt;div&gt;
+            &lt;button type="submit" class="btn btn-success"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
